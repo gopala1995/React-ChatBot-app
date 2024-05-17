@@ -6,6 +6,12 @@ class MessageParser {
 
   parse(message) {
     console.log(message);
+
+    const replyBack = message.toLowerCase();
+    console.log(this.state);
+    if (replyBack.includes("Hello Gopala")) {
+      console.log("Hi");
+    }
   }
 }
 
